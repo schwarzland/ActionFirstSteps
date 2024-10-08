@@ -14,6 +14,6 @@ jobs:
     steps:
       - name: Bruno CLI runner
         id: bru-cli
-        uses: krummbar/bruno-run-action@main
+        uses: krummbar/bruno-run-action@v0.2.0
         with:
-          path: bruno/test
+          path: ./bruno/test
