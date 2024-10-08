@@ -8,3 +8,12 @@ jobs:
         uses: actions/checkout@v3
       - run: echo "$(cat ./assets/hello_world.txt)"
 
+  bruno-tests:
+    name: Bruno test collection
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bruno CLI runner
+        id: bru-cli
+        uses: krummbar/bruno-run-action@main
+        with:
+          path: bruno/test
