@@ -9,6 +9,7 @@ jobs:
       - run: echo "$(cat ./assets/hello_world.txt)"
 
   bruno-tests:
+    needs: hello-world-job
     name: Bruno test collection
     runs-on: ubuntu-latest
     steps:
