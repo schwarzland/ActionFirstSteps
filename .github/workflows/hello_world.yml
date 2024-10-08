@@ -12,6 +12,9 @@ jobs:
     name: Bruno test collection
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
       - name: Bruno CLI runner
         id: bru-cli
         uses: krummbar/bruno-run-action@v0.2.0
